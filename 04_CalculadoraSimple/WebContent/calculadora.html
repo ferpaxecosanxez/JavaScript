@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Calculadora</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+
+<body>
+	<header>
+		<h1>Calculadora simple</h1>
+	</header>
+	
+	<div class="main">
+		<span>Número 1:</span>
+		<input id="num1" name="Numero 1" class="dato"
+			type="text" onblur="validaNumero('num1');" />
+		
+		<br/><br/>
+		<span>Número 2:</span>
+		<input id="num2" name="Numero 2" class="dato"
+			type="text" onblur="validaNumero('num2');" />
+			
+		<br/><br/>
+		<span>Resultado:</span>
+		<input id="res" class="dato" type="text" readonly="readonly" />
+		
+		<br/><br/>
+		<input class="botonMedio" type="button"
+			value="Sumar" onclick="operacion('num1', 'num2', '+');"/>
+			
+		<br/><br/>
+		<input class="botonMedio" type="button"
+			value="Restar" onclick="operacion('num1', 'num2', '-');"/>
+		
+		<br/><br/>
+		<input class="botonMedio" type="button"
+			value="Multiplicar" onclick="operacion('num1', 'num2', '*');"/>
+		
+		<br/><br/>
+		<input class="botonMedio" type="button"
+			value="Dividir" onclick="operacion('num1', 'num2', '/');"/>
+	</div>
+	
+	<script src="js/functions.js"></script>
+</body>
+</html>
