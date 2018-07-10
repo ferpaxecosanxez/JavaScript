@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Sumatorio</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+
+<body>
+	<header>
+		<h1>Sumador</h1>
+	</header>
+	
+	<div class="main">
+		<span>Número:</span>
+		<!-- Podríamos usar: type="number" -->
+		<input id="num" class="dato" type="text"
+			name="numero" onblur="validaNumero('num');"/>
+		
+		<br/><br/>
+		<input class="botonMedio" type="button"
+			value="Calcular" onclick="calcular('num');"/>
+	</div>
+	
+	<script src="js/functions.js"></script>
+</body>
+</html>
